@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/*como variables es lo primero que importamos... inicializamos todos los selectores */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Creando funciones*/
+.home {
+  padding-top: 50vh;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: radial-gradient(circle, rgba(0, 0, 25, 0.2) 40%, rgba(0, 0, 25, 0.5)), url(../images/foto1.jpg) center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home h2 {
+  padding: 4rem 0 2rem 0;
+}
+
+.home__name {
+  padding-bottom: 1rem;
+  font-size: 5em;
+  border-bottom: 2px solid #000;
+}
+
+.home__name span {
+  color: #969646;
+}
+
+/*
+Configuramos algunos Selectores básico que afectarán a TODA la APP.
+*/
+body {
+  background: #000025;
+  color: #FFF;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/*
+Ya aqui estamos estilizando SOLO lo que hay en comun en TODA la APP.JS. 
+*/
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+.social-icons {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.social-icons a {
+  padding: 0.5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #969646;
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  padding: 1rem;
+  color: #000;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background-color: #969646;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background-color: #969646;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger.open {
+  -webkit-transform: rotate(765deg);
+          transform: rotate(765deg);
+}
+
+.menu-btn__burger.open::before {
+  -webkit-transform: rotate(90deg) translate(8px, 0);
+          transform: rotate(90deg) translate(8px, 0);
+}
+
+.menu-btn__burger.open::after {
+  background-color: transparent;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 37, 0.8);
+  visibility: hidden;
+}
+
+.nav.open {
+  visibility: visible;
+}
+
+.menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  list-style: none;
+  overflow: hidden;
+  padding-right: 1rem;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-nav.open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-nav__item {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  padding: 4rem 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-nav__item.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-nav__item.active > a {
+  color: #969646;
+}
+
+.menu-nav__item__link {
+  font-size: 2em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-nav__item__link:hover {
+  color: #787828;
+  font-size: 2.1em;
+}
+
+.menu-nav__item:nth-child(1) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.menu-nav__item:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.menu-nav__item:nth-child(3) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+.menu-nav__item:nth-child(4) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+/*Y aunque este main esté aquí... practicamente no lo hemos tocado, nos interesa el display sea similar en todos los componentes
+Luego podemos estilizar cada página separada en las classnames del selector <section> en otros archivos _home.sass o así
+*/
+main {
+  height: 100%;
+  width: 100%;
+}
+
+/*Recordemos que el header al estar en position fixed, permite que el main empiece desde arriba.
+Luego, el select lleva un padding y una imagen que va a ocupar TODA la pantalla en un SAP
+*/
+/*
+li{
+    list-style:none;
+}
+*/
+/*# sourceMappingURL=index.css.map */
