@@ -26,12 +26,282 @@
 
 .home__name {
   padding-bottom: 1rem;
-  font-size: 5em;
-  border-bottom: 2px solid #000;
+  font-size: 4em;
+  border-bottom: 2px solid #969646;
 }
 
 .home__name span {
   color: #969646;
+}
+
+.aboutme {
+  padding-top: 38vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.aboutme__img {
+  position: fixed;
+  top: 0;
+  height: 50vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(0, 0, 25, 0.7)), to(rgba(0, 0, 25, 0.1))), url(../images/foto2.jpg) center top;
+  background: linear-gradient(to top, rgba(0, 0, 25, 0.7) 20%, rgba(0, 0, 25, 0.1)), url(../images/foto2.jpg) center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.aboutme h2 {
+  padding-bottom: 0.5rem;
+  font-size: 2em;
+}
+
+.aboutme__p {
+  padding: 1rem 1.5rem 0rem 1.5rem;
+  text-align: justify;
+  border-top: 2px solid #969646;
+}
+
+.aboutme span {
+  color: #969646;
+}
+
+.hobbies {
+  padding: 0.8rem 4rem;
+  margin: 0.8rem 2.5rem;
+  background: radial-gradient(#222260 20%, #101035 50%, #000025);
+  border-bottom: 3px solid #787828;
+}
+
+.hobbies span {
+  color: #969646;
+}
+
+.hobbies p {
+  text-align: left;
+  padding-top: 0.5rem;
+}
+
+.hobbies h4 {
+  border-bottom: 1px solid #969646;
+  padding-bottom: 0.5rem;
+}
+
+.projects {
+  padding-top: 40vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.projects__img {
+  position: fixed;
+  top: 0;
+  height: 40vh;
+  width: 94%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(0, 0, 25, 0.5)), to(rgba(0, 0, 25, 0))), url(../images/foto4.jpg) center top;
+  background: linear-gradient(to top, rgba(0, 0, 25, 0.5) 20%, rgba(0, 0, 25, 0)), url(../images/foto4.jpg) center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  text-align: center;
+  border-bottom: 2px solid #969646;
+}
+
+.projects__img h2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 2em;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.projects__img h2 span {
+  color: #969646;
+}
+
+.projects__items {
+  padding-top: 2rem;
+}
+
+.projects__items__i {
+  position: relative;
+  overflow: hidden;
+  justify-self: center;
+  padding: 0.8rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 9rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: radial-gradient(#222260 20%, #101035 50%, #000025);
+  border-bottom: 3px solid #787828;
+  margin: 0 2.5rem;
+}
+
+.projects__items__i span {
+  color: #969646;
+  font-weight: 700;
+}
+
+.projects__items__i p {
+  float: left;
+  text-align: left;
+  padding: 3rem 1rem;
+}
+
+.projects__items__i h4 {
+  border-bottom: 1px solid #969646;
+  padding-bottom: 0.5rem;
+}
+
+.projects__items__i img {
+  width: 100px;
+  height: 110px;
+  margin: 0 2rem 0 4rem;
+}
+
+.projects__items__i__btn {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  z-index: 1;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+}
+
+.projects__items__i__btn a {
+  cursor: pointer;
+  color: transparent;
+  padding: 4rem 0;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+}
+
+.projects__items__i__btn:hover a {
+  color: #000025;
+}
+
+.projects__items__i::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  background: rgba(120, 120, 40, 0.9);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.projects__items__i:hover::after {
+  top: 0;
+}
+
+.contact {
+  padding-top: 45vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.contact__list {
+  position: absolute;
+  top: 0;
+  height: 50vh;
+  width: 94%;
+  text-align: center;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(0, 0, 25, 0)), to(rgba(0, 0, 25, 0.3))), url(../images/foto3.jpg) center top;
+  background: linear-gradient(to top, rgba(0, 0, 25, 0) 20%, rgba(0, 0, 25, 0.3)), url(../images/foto3.jpg) center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  border-bottom: 2px solid #969646;
+}
+
+.contact h2 {
+  width: 100%;
+  padding: 0 0 0 2rem;
+  font-size: 2em;
+  text-align: center;
+}
+
+.contact h2 span {
+  color: #969646;
+}
+
+.contact__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+  font-size: 1.5em;
+  padding-left: 2rem;
+  padding-top: 4rem;
+}
+
+.contact__items i {
+  color: #969646;
+}
+
+.contact__items__text {
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact__items__text a {
+  color: #969646;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact__items__text a:hover {
+  font-size: 1.05em;
+  color: #b3b35c;
+}
+
+.contact__items__text span {
+  color: #969646;
+}
+
+.contact__items:hover .contact__items__text {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.contact__items__item {
+  background: radial-gradient(circle, #181850 20%, #101035 50%, #000025);
 }
 
 /*
@@ -39,8 +309,8 @@ Configuramos algunos Selectores básico que afectarán a TODA la APP.
 */
 body {
   background: #000025;
-  color: #FFF;
   height: 100vh;
+  color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
 }
@@ -50,7 +320,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: #FFF;
+  color: white;
   text-decoration: none;
 }
 
@@ -80,13 +350,71 @@ header {
   color: #969646;
 }
 
-footer {
+.social-icons a:hover i {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 1rem;
+  left: 1rem;
+  position: fixed;
+}
+
+#b a {
+  padding: 0.5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#b a:hover {
+  color: #969646;
+}
+
+#b a:hover i {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.a {
   font-size: 1rem;
   position: fixed;
   bottom: 0.4rem;
   right: 1rem;
   padding: 1rem;
-  color: #000;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.a span {
+  color: #969646;
+}
+
+.b {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  padding: 1rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: rotate(90deg) translate(-3.5rem, -4rem);
+          transform: rotate(90deg) translate(-3.5rem, -4rem);
+}
+
+.b span {
+  color: #969646;
 }
 
 .menu-btn {
@@ -253,9 +581,66 @@ main {
 /*Recordemos que el header al estar en position fixed, permite que el main empiece desde arriba.
 Luego, el select lleva un padding y una imagen que va a ocupar TODA la pantalla en un SAP
 */
-/*
-li{
-    list-style:none;
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+    width: 100vw;
+    background-color: rgba(0, 0, 37, 0.6);
+  }
+  .nav .menu-nav {
+    display: block;
+    text-align: center;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    padding: 0 2rem;
+  }
+  .nav .menu-nav__item.active > a {
+    color: #969646;
+  }
+  .nav .menu-nav__item__link {
+    font-size: 1.5em;
+  }
 }
-*/
+
+@media screen and (min-width: 1300px) {
+  .nav .menu-nav__item__link {
+    font-size: 2em;
+  }
+  .projects__img h2 {
+    font-size: 3em;
+  }
+  .projects__items__i p {
+    font-size: 1.5em;
+  }
+  .aboutme h2 {
+    font-size: 2.5em;
+  }
+  .aboutme__p {
+    font-size: 1.2em;
+  }
+  .hobbies h4 {
+    font-size: 1.4em;
+  }
+  .hobbies p {
+    font-size: 1.1em;
+  }
+  .contact h2 {
+    font-size: 2.5em;
+  }
+  .contact__items__item {
+    font-size: 1.2em;
+  }
+  .contact__items__text {
+    font-size: 1.2em;
+  }
+}
 /*# sourceMappingURL=index.css.map */

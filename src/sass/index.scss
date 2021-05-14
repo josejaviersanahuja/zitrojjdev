@@ -1,13 +1,17 @@
 @import './variables';
 @import './home';
+@import './about';
+@import './projects';
+@import './contact';
+
 /*
 Configuramos algunos Selectores básico que afectarán a TODA la APP.
 */
 
 body {
     background: $primary-color;
-    color: textColor($primary-color);
     height: 100vh;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
 }
@@ -17,7 +21,7 @@ h1, h2, h3 {
 }
 
 a{
-   color: textColor($primary-color);
+   color: white;
    text-decoration: none;
 }
 /*
@@ -39,17 +43,60 @@ header {
         @include transitionA;
         &:hover {
             color: $secondary-color;
+            & i {
+                @include transitionA;
+                transform: scale(1.2);
+            }
         }
     }
 }
 
-footer {
+#b{
+    
+    display: flex;
+    flex-direction: column;
+    bottom: 1rem;
+    left: 1rem;
+    position: fixed;
+    a{
+        padding: 0.5rem;
+        @include transitionA;
+        &:hover {
+            color: $secondary-color;
+            & i {
+                @include transitionA;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.a {
     font-size: 1rem;
     position: fixed;
     bottom: 0.4rem;
     right: 1rem;
     padding: 1rem;
-    color: textColor($secondary-color)
+    & span{
+        color:$secondary-color;
+    }
+    @include transitionA;
+}
+
+.b {
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    padding: 1rem;
+    & span{
+        color:$secondary-color;
+    }
+    
+    @include transitionA;
+    transform: rotate(90deg)
+    translate(-3.5rem, -4rem);
+
 }
 
 .menu-btn {
@@ -70,6 +117,7 @@ footer {
         height: 3px;
         background-color: white;
         @include transitionA;
+        
         &::before {
             content: '';
             position: absolute;
@@ -90,7 +138,7 @@ footer {
         }
         &.open {
             transform: rotate(765deg);
-
+            
             
             &::before{
                 transform: rotate(90deg) translate(8px,0);
@@ -173,9 +221,4 @@ main {
 Luego, el select lleva un padding y una imagen que va a ocupar TODA la pantalla en un SAP
 */
 
-
-/*
-li{
-    list-style:none;
-}
-*/
+@import './responsive';

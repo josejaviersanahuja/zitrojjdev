@@ -12,11 +12,11 @@ const urlList ={
     [repository]:"/projects",
     [contactMe]:"/contact"
 }
-export default function Menu() {
+export default function Menu({active}) {
 
     const [isOpen, setisOpen] = useState(false)
-    
-    
+        
+        
     const toggleMenu=()=>{
         setisOpen(prev=>!prev)
     }
@@ -28,6 +28,7 @@ export default function Menu() {
           </span>
         </div>
         <nav className={isOpen? "nav open":"nav"}>
+            
             <ul className={isOpen? "menu-nav open":"menu-nav"}>
             {list.map(  
                 e=> <MenuList 
@@ -35,6 +36,7 @@ export default function Menu() {
                     isOpen={isOpen}
                     text={e}
                     url={urlList[e]}
+                    active={active}
                 />
                 )
             }

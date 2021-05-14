@@ -13,11 +13,26 @@ $third-color: rgb(120,120,40);
     transition: all 0.5s ease-in-out;
 }
 
-
+@mixin transitionB {
+    transition: all 0.9s ease-in-out;
+}
 @function textColor($color) {
     @if(lightness($color)>40%) {
-        @return #000;
+        @return darken($color, 50%);
     } @else {
-        @return #FFF;
+        @return lighten($color, 50%);
+    }
+}
+
+
+@mixin media-m {
+    @media screen and (min-width:768px) {
+     @content;   
+    }
+}
+
+@mixin media-l {
+    @media screen and (min-width:1300px) {
+     @content;   
     }
 }

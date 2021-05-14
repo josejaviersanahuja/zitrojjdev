@@ -1,0 +1,116 @@
+.projects {
+    padding-top: 40vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    &__img {
+        position: fixed;
+        top:0;
+        height: 40vh;
+        width: 94%;
+        background: linear-gradient(to top,  rgba(0,0,25,0.5) 20%, rgba(0,0,25,0)),
+        url(../images/foto4.jpg) center top;
+        background-size:contain ;
+        background-repeat: no-repeat;
+        z-index: -1;
+        text-align: center;
+        & h2{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding-bottom: 0.5rem;
+            text-align: center;
+            font-size: 2em;
+            @include transitionA;
+            & span{
+                color: $secondary-color;
+            }
+        }
+        
+        border-bottom: 2px solid  $secondary-color;
+       
+    }
+    
+}
+
+.projects__items {
+    padding-top: 2rem;
+    &__i {
+        position: relative;
+        overflow: hidden;
+        justify-self: center;
+        padding:0.8rem 4rem;
+        display: flex;
+        max-height: 9rem;
+        justify-content: space-around;
+        background: radial-gradient( #222260 20%,#101035 50%,$primary-color );
+        border-bottom: 3px solid $third-color;
+        margin: 0 2.5rem;
+        
+        & span{
+            color: $secondary-color;
+            font-weight: 700;
+        }
+        & p{
+            float: left;
+            text-align: left;
+            padding: 3rem 1rem;
+            
+        }
+       
+        & h4{
+            border-bottom: 1px solid $secondary-color;
+            padding-bottom: 0.5rem;
+        }
+
+        & img{
+            width:100px;
+            height: 110px;
+            margin:0 2rem 0 4rem;
+        }
+        &__btn{
+            position: absolute;
+            top:0;
+            width:100%;
+            height: 100%;
+            display: grid;
+            align-content: center;
+            text-align: center;
+            
+            grid-template-columns: repeat(2, 1fr);
+            z-index: 1;
+            @include transitionB;
+            & a{
+                cursor: pointer;
+                color: transparent;
+                padding:4rem 0;
+                @include transitionB;
+               
+            }
+            &:hover a{
+                color: $primary-color;
+            }
+        }
+        &::after {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            content: "";
+            background: rgba($color: $third-color, $alpha: 0.9);
+            width:100%;
+            height: 100%;
+            @include transitionA;
+        }
+        
+        &:hover{
+            
+            &::after{
+                top:0;
+             }
+        }
+
+        
+    }   
+}

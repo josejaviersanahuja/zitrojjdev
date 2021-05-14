@@ -1,0 +1,66 @@
+.contact {
+    padding-top: 45vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+        
+    &__list {
+       position: absolute;
+       top:0;
+        height: 50vh;
+        width: 94%;
+         text-align: center;
+         background: linear-gradient(to top,  rgba(0,0,25,0) 20%, rgba(0,0,25,0.3)),
+         url(../images/foto3.jpg) center top;
+         background-size:contain ;
+         background-repeat: no-repeat;
+         z-index: -1;
+        border-bottom:2px solid $secondary-color ;
+    }
+    & h2{
+        width: 100%;
+        padding: 0 0 0 2rem;
+        font-size: 2em;
+        text-align: center;
+        & span{
+            color: $secondary-color;
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        font-size: 1.5em;
+        padding-left: 2rem;
+        padding-top: 4rem;
+        & i{
+            color: $secondary-color;
+        }
+        &__text {
+            transform: translateX(-120%);
+            @include transitionA;
+            & a{
+                color: $secondary-color;
+                @include transitionA;
+                &:hover {
+                   font-size: 1.05em;
+                    color: lighten($color: $secondary-color, $amount: 10%);
+                }
+            }
+            & span {
+                color: $secondary-color;
+            }
+        }
+        &:hover{
+            .contact__items__text{
+                @include transitionA;
+                transform: translateX(0);
+            }
+        }
+        &__item{
+            background: radial-gradient(circle, #181850 20%,#101035 50%,$primary-color );   
+        }
+    }
+}

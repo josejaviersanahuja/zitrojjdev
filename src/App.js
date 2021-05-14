@@ -6,19 +6,21 @@ import AboutMe from './pages/AboutMe'
 import Projects from './pages/Projects'
 import ContactMe from './pages/ContactMe'
 import Menu from './components/allsitecomponents/Menu'
+import useActive from './components/customHook/useActive'
 
 export default function App() {
-
+  const {active, footerClass} = useActive()
+  console.log(active, footerClass);
   return (
     <BrowserRouter>
       <header >
-        <Menu/>
+        <Menu active={active}/>
       </header>
       <Switch>
           <Route exact path="/:id" children={<Child />} />
           <Route exact path="/" children={<Home />} />
         </Switch>
-      <div className="social-icons">
+      <div className="social-icons" id={footerClass}>
               <a href="https://twitter.com/zitrojj" target="_blank" rel="noreferrer">
                   <i className="fab fa-twitter fa-2x"></i>
               </a>
@@ -29,8 +31,8 @@ export default function App() {
                   <i className="fab fa-github fa-2x"></i>
               </a>
           </div>
-      <footer>
-        &copy; Copyright 2021
+      <footer className={footerClass}>
+        &copy; Copyright <span>2021</span>
       </footer>
       
     </BrowserRouter>
@@ -40,7 +42,7 @@ export default function App() {
 function Child(){
  
  let {id}=useParams()
- console.log(id);
+ 
   return(<>
     
     {id==="about"? <AboutMe />:null}

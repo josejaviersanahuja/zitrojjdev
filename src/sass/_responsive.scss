@@ -1,0 +1,84 @@
+
+@include media-m {
+    .menu-btn {
+        visibility: hidden;
+    }
+    .nav {
+        visibility: visible;
+        width:100vw;
+        background-color: rgba($primary-color, $alpha: 0.6);
+        
+        .menu-nav {
+            display: block;
+            text-align: center;
+            transform: translateY(0);
+            height: 100%;
+
+            &__item{
+                display: inline;
+                transform: translateX(0);
+                padding: 0 2rem;
+                &.active>a{
+                    
+                        color: $secondary-color;
+                    
+                }
+                &__link{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }    
+}
+
+@include media-l {
+    
+    .nav {
+        
+        .menu-nav {
+    
+            &__item{
+                &__link{
+                    font-size: 2em;
+                }
+            }
+        }
+    }  
+    .projects__img {
+        h2{
+            font-size: 3em;
+        }  
+    }
+    .projects__items__i{
+        p{
+            font-size: 1.5em;
+        }
+    }
+    .aboutme {
+        h2{
+        font-size: 2.5em;
+        }
+        &__p{
+            font-size: 1.2em;
+        }
+    }
+    .hobbies h4{
+        font-size: 1.4em;
+    }
+    .hobbies p{
+        font-size:1.1em;
+    }
+    .contact {
+        h2{
+            font-size: 2.5em;
+        }
+        &__items {
+            &__item{
+                font-size: 1.2em;
+            }
+            &__text{
+                font-size: 1.2em;
+            }
+        }
+    }
+}

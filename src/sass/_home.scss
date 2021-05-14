@@ -8,14 +8,13 @@
     url(../images/foto1.jpg) center top;
     background-size:contain ;
     background-repeat: no-repeat;
-    
     h2 {
         padding: 4rem 0 2rem 0;
     }
     &__name {
         padding-bottom:1rem ;
-        font-size:5em;
-        border-bottom: 2px solid  textColor($secondary-color);
+        font-size:4em;
+        border-bottom: 2px solid  $secondary-color;
         & span {
             color:$secondary-color;
         }
