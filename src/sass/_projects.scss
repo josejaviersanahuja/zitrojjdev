@@ -9,8 +9,8 @@
         left:0;
         height: 40vh;
         width: 100%;
-        background: linear-gradient(to top,  rgba(0,0,25,0.5) 20%, rgba(0,0,25,0)),
-        url(../images/metalSinfondoReal.png) center center;
+        background: //linear-gradient(to top,  rgba(0,0,25,0.5) 20%, rgba(0,0,25,0)),
+        url(../images/logoOliva.png) center center;
         background-size:contain ;
         background-repeat: no-repeat;
         z-index: -1;
@@ -44,7 +44,7 @@
         display: flex;
         max-height: 9rem;
         justify-content: space-around;
-        background: radial-gradient( #222260 20%,#101035 50%,$primary-color );
+        background: radial-gradient( #454545 20%,#323232 50%,$primary-color );
         border-bottom: 3px solid $third-color;
         margin: 0 4rem;
         

@@ -1,5 +1,6 @@
 import React from 'react'
 import tutorials from '../../images/tutorials.jpg'
+import api from '../../images/apiheroku.jpg'
 
 export default function index() {
     return (
@@ -19,9 +20,9 @@ export default function index() {
             </div>
             <div className="projects__items__i">
             <p> <span>Myfirstnode</span> It's about my first API rest creation. I am currently learning back-end. I´ll be fullstack Dev very soon.</p>
-              <img src={tutorials} alt="project2"/>
+              <img src={api} alt="project2"/>
               <nav className="projects__items__i__btn">
-                <a href="https://dry-spire-72214.herokuapp.com/s" target="_blank" rel="noreferrer"><i className="fas fa-eye"/> Check it.</a>
+                <a href="https://dry-spire-72214.herokuapp.com/" target="_blank" rel="noreferrer"><i className="fas fa-eye"/> Check it.</a>
                 <a href="https://github.com/josejaviersanahuja/myfirstnode" target="_blank" rel="noreferrer"><i className="fab fa-github"/> Github</a>
               </nav>
             </div>

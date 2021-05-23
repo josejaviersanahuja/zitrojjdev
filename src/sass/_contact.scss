@@ -12,7 +12,7 @@
         height: 50vh;
         width: 100%;
          text-align: center;
-         background: linear-gradient(to top,  rgba(0,0,25,0) 20%, rgba(0,0,25,0.3)),
+         background: //linear-gradient(to top,  rgba(0,0,25,0) 20%, rgba(0,0,25,0.3)),
          url(../images/foto3.jpg) center top;
          background-size:contain ;
          background-repeat: no-repeat;
@@ -59,7 +59,7 @@
             }
         }
         &__item{
-            background: radial-gradient(circle, #181850 20%,#101035 50%,$primary-color );   
+            background: radial-gradient(circle, #454545 20%,#323232 50%,$primary-color );   
             padding: 0rem;
             width: 90%;
         }

@@ -10,7 +10,7 @@
         top:0;
         height: 50vh;
         width: 100%;
-        background: linear-gradient(to top,  rgba(0,0,25,0.7) 20%, rgba(0,0,25,0.1)),
+        background: //linear-gradient(to top,  rgba(0,0,25,0.7) 20%, rgba(0,0,25,0.1)),
         url(../images/foto2.jpg) center top;
         background-size:contain ;
         background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 .hobbies {
     padding:0.8rem 0rem;
     margin: 0.8rem 4rem;
-    background: radial-gradient( #222260 20%,#101035 50%,$primary-color );
+    background: radial-gradient( #454545 20%,#323232 50%,$primary-color );
     border-bottom: 3px solid $third-color;
     & span{
         color: $secondary-color;
