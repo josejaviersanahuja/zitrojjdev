@@ -7,26 +7,26 @@ export default function index() {
           <div className="aboutme__img">
           
           </div>
-          <h2>IDK what to say <span>about me.</span></h2>
+          <h2>About <span>me</span></h2>
           <p className="aboutme__p">
-            loremSunt mollit velit anim aliquip ad id Lorem enim nisi. Sunt aliqua ipsum fugiat cillum laboris consequat do ipsum incididunt dolor cillum aute eu. Enim dolore ad do veniam tempor ad est consectetur anim do ipsum dolore ut. Labore nostrud et id amet quis ipsum ipsum. 
+          I feel an innately curiosity about logical and scientific processes. That curiosity created a skill that grew in me. On my teen ages, I managed to travel the world on math olympics and after that I managed to be accepted in a good University in Venezuela where I made 3 years of Computing engeneering, for different reasons, I didn´t finish my career, but I can still offer a valueble job.
           </p>
           <div className="hobbies">
-            <h4>Hob<span>bie 1</span></h4>
+            <h4>Family <span>head</span></h4>
             <p>
-              Aute fugiat culpa ullamco sit mollit nisi. Dolore proident nisi est consectetur sint est excepteur proident est ut. Occaecat aliquip in magna eiusmod magna esse esse et officia exercitation. Esse fugiat excepteur ex dolore sint culpa. Velit id veniam Lorem deserunt dolore amet minim est. 
+              I have put some photos of my family on this website, together with God, they are all my fundametal pillars in my life. If I am a Front-end developer now, and it's only thanks to them.
             </p>
             </div>
             <div className="hobbies">
-            <h4>Hob<span>bie 2</span></h4>
+            <h4>Personal <span>Attributes</span></h4>
             <p>
-              Aute fugiat culpa ullamco sit mollit nisi. Dolore proident nisi est consectetur sint est excepteur proident est ut. Occaecat aliquip in magna eiusmod magna esse esse et officia exercitation. Esse fugiat excepteur ex dolore sint culpa. Velit id veniam Lorem deserunt dolore amet minim est. 
+              Above everything, i am a self-learner. When I commit to a personal project, I don´t let it go. I am a responsible person with a great capability to adapt. I face challenges with a good attitude and ability to work under pressure. I learn fast from my mistakes.
             </p>
             </div>
             <div className="hobbies">
-            <h4>Hob<span>bie 3</span></h4>
+            <h4>As a Front-end <span>developer</span></h4>
             <p>
-              Aute fugiat culpa ullamco sit mollit nisi. Dolore proident nisi est consectetur sint est excepteur proident est ut. Occaecat aliquip in magna eiusmod magna esse esse et officia exercitation. Esse fugiat excepteur ex dolore sint culpa. Velit id veniam Lorem deserunt dolore amet minim est.
+              I can offer my full interest to reach the expectations of the client. Any developer can create a website or an interface that can fill all the parameters of the contract, but very few, who can show a genuine interest to go beyond that. It's important to show with my work, the love I feel for this job.
             </p>
           </div>
           

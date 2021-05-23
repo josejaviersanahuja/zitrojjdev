@@ -33,7 +33,7 @@ export default function App() {
           </div>
       <footer className={footerClass}>
         &copy; Copyright <span>2021</span>
-      </footer>
+      </footer> 
       
     </BrowserRouter>
   );

@@ -29,10 +29,36 @@
             }
         }
     }    
+    .logohome {
+        height: 13vh;
+    }
+    .logocontenedor {
+        height: 15vh;
+    }
+    .projects__items{
+        padding-top: 0;
+        &__i{
+            p{
+                padding-top: 3rem;
+            }
+        }
+    }
+    .home {
+        h2{
+            padding: 4rem 0 2rem 0;
+        }
+    }
+    .hobbies {
+        margin: 0.8rem 4rem;
+    }
 }
 
 @include media-l {
-    
+    .home {
+        h2{
+            padding: 6rem 0 2rem 0;
+        }
+    }
     .nav {
         
         .menu-nav {

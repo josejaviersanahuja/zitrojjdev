@@ -21,7 +21,7 @@
 }
 
 .home h2 {
-  padding: 4rem 0 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .home__name {
@@ -36,8 +36,8 @@
 
 .aboutme {
   padding-top: 38vh;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
   height: 100vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -73,8 +73,8 @@
 }
 
 .hobbies {
-  padding: 0.8rem 4rem;
-  margin: 0.8rem 2.5rem;
+  padding: 0.8rem 0rem;
+  margin: 0.8rem 4rem;
   background: radial-gradient(#222260 20%, #101035 50%, #000025);
   border-bottom: 3px solid #787828;
 }
@@ -95,8 +95,6 @@
 
 .projects {
   padding-top: 40vh;
-  padding-left: 2rem;
-  padding-right: 2rem;
   height: 100vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -107,10 +105,11 @@
 .projects__img {
   position: fixed;
   top: 0;
+  left: 0;
   height: 40vh;
-  width: 94%;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(0, 0, 25, 0.5)), to(rgba(0, 0, 25, 0))), url(../images/foto4.jpg) center top;
-  background: linear-gradient(to top, rgba(0, 0, 25, 0.5) 20%, rgba(0, 0, 25, 0)), url(../images/foto4.jpg) center top;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(0, 0, 25, 0.5)), to(rgba(0, 0, 25, 0))), url(../images/metalSinfondoReal.png) center center;
+  background: linear-gradient(to top, rgba(0, 0, 25, 0.5) 20%, rgba(0, 0, 25, 0)), url(../images/metalSinfondoReal.png) center center;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
@@ -141,7 +140,7 @@
   position: relative;
   overflow: hidden;
   justify-self: center;
-  padding: 0.8rem 4rem;
+  padding: 0.8rem 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +149,7 @@
       justify-content: space-around;
   background: radial-gradient(#222260 20%, #101035 50%, #000025);
   border-bottom: 3px solid #787828;
-  margin: 0 2.5rem;
+  margin: 0 4rem;
 }
 
 .projects__items__i span {
@@ -161,7 +160,8 @@
 .projects__items__i p {
   float: left;
   text-align: left;
-  padding: 3rem 1rem;
+  font-size: 0.9em;
+  width: 70%;
 }
 
 .projects__items__i h4 {
@@ -170,9 +170,9 @@
 }
 
 .projects__items__i img {
-  width: 100px;
-  height: 110px;
-  margin: 0 2rem 0 4rem;
+  width: 105px;
+  height: 70px;
+  margin: 1rem;
 }
 
 .projects__items__i__btn {
@@ -222,8 +222,8 @@
 
 .contact {
   padding-top: 45vh;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
   height: 100vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -235,7 +235,7 @@
   position: absolute;
   top: 0;
   height: 50vh;
-  width: 94%;
+  width: 100%;
   text-align: center;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, rgba(0, 0, 25, 0)), to(rgba(0, 0, 25, 0.3))), url(../images/foto3.jpg) center top;
   background: linear-gradient(to top, rgba(0, 0, 25, 0) 20%, rgba(0, 0, 25, 0.3)), url(../images/foto3.jpg) center top;
@@ -247,8 +247,8 @@
 
 .contact h2 {
   width: 100%;
-  padding: 0 0 0 2rem;
-  font-size: 2em;
+  padding: 0rem;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -262,9 +262,8 @@
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 2rem;
-  font-size: 1.5em;
-  padding-left: 2rem;
-  padding-top: 4rem;
+  font-size: 1.3em;
+  padding: 2rem 1.5rem 0.5rem 1.5rem;
 }
 
 .contact__items i {
@@ -302,6 +301,8 @@
 
 .contact__items__item {
   background: radial-gradient(circle, #181850 20%, #101035 50%, #000025);
+  padding: 0rem;
+  width: 90%;
 }
 
 /*
@@ -550,6 +551,24 @@ header {
   font-size: 2.1em;
 }
 
+.logohome {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-image: url(../images/metalSinfondoReal.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 8vh;
+  position: absolute;
+  top: 1vh;
+}
+
+.logocontenedor {
+  position: relative;
+  height: 10vh;
+}
+
 .menu-nav__item:nth-child(1) {
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
@@ -609,9 +628,30 @@ Luego, el select lleva un padding y una imagen que va a ocupar TODA la pantalla 
   .nav .menu-nav__item__link {
     font-size: 1.5em;
   }
+  .logohome {
+    height: 13vh;
+  }
+  .logocontenedor {
+    height: 15vh;
+  }
+  .projects__items {
+    padding-top: 0;
+  }
+  .projects__items__i p {
+    padding-top: 3rem;
+  }
+  .home h2 {
+    padding: 4rem 0 2rem 0;
+  }
+  .hobbies {
+    margin: 0.8rem 4rem;
+  }
 }
 
 @media screen and (min-width: 1300px) {
+  .home h2 {
+    padding: 6rem 0 2rem 0;
+  }
   .nav .menu-nav__item__link {
     font-size: 2em;
   }

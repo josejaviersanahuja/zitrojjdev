@@ -10,7 +10,7 @@ export default function index() {
             <div className="contact__items__item">
               <i className="fas fa-envelope"/> Email
               <div className="contact__items__text">
-                  josejaviersanahuja<span>@gmail.com</span>
+              <a href="mailto:josejaviersanahuja@gmail.com"><span style={{color:'white'}}>josejaviersanahuja</span>@gmail.com</a>
               </div>
             </div>
             <div className="contact__items__item">

@@ -203,6 +203,23 @@ header {
     
 }
 
+.logohome {
+    justify-self: center;
+    background-image: url(../images/metalSinfondoReal.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center ;
+    width: 100%;
+    height: 8vh;
+    position: absolute;
+    top: 1vh;
+}
+.logocontenedor {
+    position: relative;
+  //  background: radial-gradient( orange,rgba(255,255,255,0.5));
+    height:10vh;
+    }
+
 @for $var from 1 to 5 {
     .menu-nav__item:nth-child(#{$var}){
         transition-delay: ($var*0.15s);
