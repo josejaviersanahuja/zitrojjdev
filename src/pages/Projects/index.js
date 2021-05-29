@@ -1,6 +1,7 @@
 import React from 'react'
 import tutorials from '../../images/tutorials.jpg'
 import api from '../../images/apiheroku.jpg'
+import spgss from '../../images/spgss.jpg'
 
 export default function index() {
     return (
@@ -27,11 +28,11 @@ export default function index() {
               </nav>
             </div>
             <div className="projects__items__i">
-            <p> <span>Proident</span> aute elit cupidatat dolore.</p>
-              <img src={tutorials} alt="project1"/>
+            <p> <span>SmartPokemonGo</span> An app created only to help you improve your pvp records in Pokemon Go.</p>
+              <img src={spgss} alt="project1"/>
               <nav className="projects__items__i__btn">
-                <a href="/projects" target="_blank" rel="noreferrer"><i className="fas fa-eye"/> Preview</a>
-                <a href="/projects" target="_blank" rel="noreferrer"><i className="fab fa-github"/> Github</a>
+                <a href="https://smartpokemongo.vercel.app/" target="_blank" rel="noreferrer"><i className="fas fa-eye"/> Preview</a>
+                <a href="https://github.com/josejaviersanahuja/smartpokemongo" target="_blank" rel="noreferrer"><i className="fab fa-github"/> Github</a>
               </nav>
             </div>
           </div>
