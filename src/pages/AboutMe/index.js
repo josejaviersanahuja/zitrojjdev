@@ -5,9 +5,9 @@ export default function index() {
         <main>
         <section className="aboutme">
           <div className="aboutme__img">
-          
-          </div>
           <h2>About <span>me</span></h2>
+          </div>
+          
           <p className="aboutme__p">
           I feel an innately curiosity about logical and scientific processes. That curiosity created a skill that grew in me. On my teen ages, I managed to travel the world on math olympics and after that I managed to be accepted in a good University in Venezuela where I made 3 years of Computing engeneering, for different reasons, I didn´t finish my career, but I can still offer a valueble job.
           </p>

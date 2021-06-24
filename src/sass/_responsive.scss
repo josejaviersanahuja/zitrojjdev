@@ -36,8 +36,11 @@
         height: 15vh;
     }
     .projects__items{
-        padding-top: 0;
+        padding:0 2rem;
+        padding-top:2rem;
         &__i{
+            
+            transform: scale(1);
             p{
                 padding-top: 3rem;
             }

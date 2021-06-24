@@ -1,5 +1,5 @@
 .aboutme {
-    padding-top: 38vh;
+    padding-top: 42vh;
     padding-left: 0rem;
     padding-right: 0rem;
     height: 100vh;
@@ -7,24 +7,28 @@
     text-align: center;
     &__img {
         position: fixed;
+        display:flex;
         top:0;
-        height: 50vh;
+        height: 42vh;
         width: 100%;
-        background: //linear-gradient(to top,  rgba(0,0,25,0.7) 20%, rgba(0,0,25,0.1)),
+        background: linear-gradient(to top,  rgba(20,20,20,0.7) 20%, rgba(0,0,25,0.1)),
         url(../images/foto2.jpg) center top;
         background-size:contain ;
         background-repeat: no-repeat;
         z-index: -1;
-
+        
     }
     & h2{
         padding-bottom: 0.5rem;
         font-size: 2em;
+        margin: auto auto 0 auto;
     }
     &__p {
         padding: 1rem 1.5rem 0rem 1.5rem;
         text-align: justify;
         border-top: 2px solid  $secondary-color;
+        backdrop-filter:blur(5px);
+        mix-blend-mode:color-dodge;
     }
     & span {
         color: $secondary-color;
@@ -36,6 +40,8 @@
     margin: 0.8rem 4rem;
     background: radial-gradient( #454545 20%,#323232 50%,$primary-color );
     border-bottom: 3px solid $third-color;
+    backdrop-filter:blur(5px);
+    mix-blend-mode:color-dodge;
     & span{
         color: $secondary-color;
     }

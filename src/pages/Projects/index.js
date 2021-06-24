@@ -1,7 +1,8 @@
 import React from 'react'
-import tutorials from '../../images/tutorials.jpg'
-import api from '../../images/apiheroku.jpg'
-import spgss from '../../images/spgss.jpg'
+import InvitacionAnimacion from './InvitacionAnimacion'
+import MyFirstNodeProject from './MyFirstNodeProject'
+import SmartPokemonGoProject from './SmartPokemonGoProject'
+import TutorialsProject from './TutorialsProject'
 
 export default function index() {
     return (
@@ -11,30 +12,10 @@ export default function index() {
            <h2>Here you can find <span>my repository</span></h2>
           </div>
           <div className="projects__items">
-            <div className="projects__items__i">
-              <p> <span>Tutorials</span> It's my first project. It's basically a log of notes taken on each course i made</p>
-              <img src={tutorials} alt="project1"/>
-              <nav className="projects__items__i__btn">
-                <a href="https://tutorials-vert.vercel.app/" target="_blank" rel="noreferrer"><i className="fas fa-eye"/>Check it.</a>
-                <a href="https://github.com/josejaviersanahuja/tutorials" target="_blank" rel="noreferrer"><i className="fab fa-github"/> Github</a>
-              </nav>
-            </div>
-            <div className="projects__items__i">
-            <p> <span>Myfirstnode</span> It's about my first API rest creation. I am currently learning back-end. I´ll be fullstack Dev very soon.</p>
-              <img src={api} alt="project2"/>
-              <nav className="projects__items__i__btn">
-                <a href="https://dry-spire-72214.herokuapp.com/" target="_blank" rel="noreferrer"><i className="fas fa-eye"/> Check it.</a>
-                <a href="https://github.com/josejaviersanahuja/myfirstnode" target="_blank" rel="noreferrer"><i className="fab fa-github"/> Github</a>
-              </nav>
-            </div>
-            <div className="projects__items__i">
-            <p> <span>SmartPokemonGo</span> An app created only to help you improve your pvp records in Pokemon Go.</p>
-              <img src={spgss} alt="project1"/>
-              <nav className="projects__items__i__btn">
-                <a href="https://smartpokemongo.vercel.app/" target="_blank" rel="noreferrer"><i className="fas fa-eye"/> Preview</a>
-                <a href="https://github.com/josejaviersanahuja/smartpokemongo" target="_blank" rel="noreferrer"><i className="fab fa-github"/> Github</a>
-              </nav>
-            </div>
+            <InvitacionAnimacion/>
+            <TutorialsProject/>
+            <MyFirstNodeProject/>
+            <SmartPokemonGoProject/>
           </div>
         </section>
       </main>
