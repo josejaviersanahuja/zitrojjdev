@@ -3,6 +3,7 @@ import InvitacionAnimacion from './InvitacionAnimacion'
 import MyFirstNodeProject from './MyFirstNodeProject'
 import SmartPokemonGoProject from './SmartPokemonGoProject'
 import TutorialsProject from './TutorialsProject'
+import TwitterClone from './TwitterClone'
 
 export default function index() {
     return (
@@ -16,6 +17,7 @@ export default function index() {
             <TutorialsProject/>
             <MyFirstNodeProject/>
             <SmartPokemonGoProject/>
+            <TwitterClone/>
           </div>
         </section>
       </main>
