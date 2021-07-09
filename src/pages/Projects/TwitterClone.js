@@ -1,5 +1,4 @@
 import React from 'react'
-import imgTutorials from '../../images/imgTutorials.png'
 
 export default function TwitterClone() {
     return (
