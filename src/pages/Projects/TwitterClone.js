@@ -17,6 +17,7 @@ export default function TwitterClone() {
                     <h2>Languages {'&'} technologies </h2>
                     <ul>
                         <li>Next JS</li>
+                        <li>Typescript</li>
                         <li>Server Side Rendering in some pages</li>
                         <li>styled-jsx</li>
                         <li>Firebase</li>
