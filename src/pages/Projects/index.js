@@ -1,4 +1,5 @@
 import React from 'react'
+import GifAndStickers from './GifAndStickers'
 import InvitacionAnimacion from './InvitacionAnimacion'
 import MyFirstNodeProject from './MyFirstNodeProject'
 import SmartPokemonGoProject from './SmartPokemonGoProject'
@@ -18,6 +19,7 @@ export default function index() {
             <MyFirstNodeProject/>
             <SmartPokemonGoProject/>
             <TwitterClone/>
+            <GifAndStickers/>
           </div>
         </section>
       </main>
