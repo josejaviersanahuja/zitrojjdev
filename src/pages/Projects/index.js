@@ -5,6 +5,7 @@ import MyFirstNodeProject from './MyFirstNodeProject'
 import SmartPokemonGoProject from './SmartPokemonGoProject'
 import TutorialsProject from './TutorialsProject'
 import TwitterClone from './TwitterClone'
+import MonitoringApp from './MonitoringApp'
 
 export default function index() {
     return (
@@ -20,6 +21,7 @@ export default function index() {
             <SmartPokemonGoProject/>
             <TwitterClone/>
             <GifAndStickers/>
+            <MonitoringApp/>
           </div>
         </section>
       </main>
